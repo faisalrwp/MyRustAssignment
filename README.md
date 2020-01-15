@@ -1,4 +1,4 @@
-# MyRustAssignmnt
+# MyRustAssignment
 
 This is the collection of Assignments solved during the PIAIC Internet Of Things course.
 Details are as under.
