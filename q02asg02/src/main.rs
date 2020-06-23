@@ -1,6 +1,5 @@
 use std::io;
 use rand::Rng;
-use std::fmt::Debug;
 
 fn main() {
     myUH();
@@ -14,11 +13,13 @@ fn main() {
     };
     if myMaxPlayer == 0 || myMaxPlayer > 255
     {
+        myOutput("Enter Valid Values For No. Of Players (1-255)".to_string());
         std::process::exit(0);
     }
     println!("{} Players will play this game", myMaxPlayer) ;
 
     let mut myPlayer = vec!["-".to_string(); myMaxPlayer];
+    //let mut myPlayer = ["-"; 255];
     let mut myScore = vec![0; myMaxPlayer];
     
     for i in 0..myMaxPlayer
